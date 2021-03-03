@@ -51,23 +51,28 @@ class Config(object):
     # add offensive API
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
-    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
-    RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
+    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech@JKsstdBot")
+    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl@JKsstdBot")
+    RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", """[TorrentGenerator_Bot]
+type = drive
+scope = drive
+root_folder_id = 1Ss-FUl2rRaTiLk1lq74yAcmj5i8dPJXj
+token = {"access_token":"ya29.A0AfH6SMCnpzkVSL96IiMcNKef1Q0tAgqaJ9UqIIf-vBqzNQ2911iGQE5pJAjIapCipbtlC441sHStj84tXXPRxwE_qxb7E2E3xwq79wobky6Ow6flhk366Ld1LXncVodgJDke0lUV8c5saRLBimrn0pgsmHvb","token_type":"Bearer","refresh_token":"1//0g4JPYyDMkDucCgYIARAAGBASNwF-L9IrebVKrFnIdxrCVqK1Id-Ot6qdZPPSg-Bkn3iqIg07KkpPcE2ESiuS25Ymk7p4gGsJccY","expiry":"2021-02-24T19:54:46.0239209+05:30"}
+team_drive = 0AKM0e85jWxEpUk9PVA""")
     DESTINATION_FOLDER = os.environ.get(
         "DESTINATION_FOLDER", "TorrentLeech-Gdrive")
-    GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech")
-    INDEX_LINK = os.environ.get("INDEX_LINK", "")
+    GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech@JKsstdBot")
+    INDEX_LINK = os.environ.get("INDEX_LINK", "https://shree.satyu.workers.dev")
     TELEGRAM_LEECH_COMMAND_G = os.environ.get(
-        "TELEGRAM_LEECH_COMMAND_G", "tleech")
-    CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
-    GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
-    STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
-    SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
-    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
+        "TELEGRAM_LEECH_COMMAND_G", "tleech@JKsstdBot")
+    CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel@JKsstdBot")
+    GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize@JKsstdBot")
+    STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status@JKsstdBot")
+    SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail@JKsstdBot")
+    CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail@JKsstdBot")
     UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False")
-    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl")
-    LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
-    CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone")
-    UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload")
-    RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme")
+    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl@JKsstdBot")
+    LOG_COMMAND = os.environ.get("LOG_COMMAND", "log@JKsstdBot")
+    CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone@JKsstdBot")
+    UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload@JKsstdBot")
+    RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme@JKsstdBot")
